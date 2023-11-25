@@ -1,0 +1,26 @@
+HTTP/1.1 vs. HTTP/2
+The evolution of the internet has seen significant advancements in the protocols governing communication between web clients and servers.
+Among these strides, the transition from HTTP/1.1 to HTTP/2 stands as a fundamental shift that has revolutionized web performance and efficiency.
+
+HTTP/1.1:
+HTTP/1.1, the predecessor, has been the backbone of the internet for over a decade. However, its performance limitations prompted the need for a more efficient protocol. Here are some key characteristics of HTTP/1.1:
+
+1. Connection Handling:
+Single Request-Response: HTTP/1.1 operates on a single request-response model, meaning that each resource (e.g., images, scripts) requires a separate connection, leading to latency issues and increased load times.
+
+Header Overhead: With every request, HTTP/1.1 sends full headers, causing redundant data transmission and consuming more bandwidth.
+
+2. Multiplexing and Compression:
+No Multiplexing: Lack of multiplexing in HTTP/1.1 meant that requests had to wait in line, leading to head-of-line blocking and delays in loading web pages.
+
+No Native Compression: It lacked native support for data compression, requiring additional techniques like gzip to compress data.
+
+HTTP/2:
+1. Multiplexing:
+Stream Multiplexing: HTTP/2 introduced multiplexing, allowing multiple requests and responses to be sent over a single TCP connection. This significantly reduces latency and optimizes resource utilization.
+2. Header Compression:
+Header Compression: HTTP/2 utilizes header compression techniques like HPACK, which reduce redundant header data, minimizing overhead and conserving bandwidth.
+3. Server Push:
+Server Push: This feature enables servers to proactively send resources to the client before they are explicitly requested. It optimizes loading by anticipating the required resources, reducing round trips.
+4. Binary Protocol:
+Binary Framing: HTTP/2 adopts a binary framing mechanism, facilitating faster parsing and more efficient processing by machines compared to the text-based nature of HTTP/1.1
