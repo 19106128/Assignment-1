@@ -1,4 +1,5 @@
-HTTP/1.1 vs. HTTP/2
+1. HTTP/1.1 vs. HTTP/2
+
 The evolution of the internet has seen significant advancements in the protocols governing communication between web clients and servers.
 Among these strides, the transition from HTTP/1.1 to HTTP/2 stands as a fundamental shift that has revolutionized web performance and efficiency.
 
@@ -24,3 +25,19 @@ Header Compression: HTTP/2 utilizes header compression techniques like HPACK, wh
 Server Push: This feature enables servers to proactively send resources to the client before they are explicitly requested. It optimizes loading by anticipating the required resources, reducing round trips.
 4. Binary Protocol:
 Binary Framing: HTTP/2 adopts a binary framing mechanism, facilitating faster parsing and more efficient processing by machines compared to the text-based nature of HTTP/1.1
+
+
+2.Objects:
+At its core, an object in JavaScript is an unordered collection of properties, where each property consists of a key and a corresponding value.
+These properties can hold various data types, including primitives, functions, or even other objects
+
+ Internal Representation:
+Each object has an internal property collection known as the property map, storing its keys and associated values.
+These properties can be added, modified, or deleted dynamically.
+Objects in JavaScript also have a prototype, referencing another object where they inherit properties and methods.
+This chain of inheritance is crucial in understanding object behaviors.
+
+
+
+
+
